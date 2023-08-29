@@ -1,10 +1,10 @@
 :root {
   --blue-color: #0075ff;
   --blue-alt-color: #0d69d5;
-  --blue-color: #f59e0b;
-  --blue-color: #22c55e;
-  --blue-color: #f44336;
-  --blue-color: #888;
+  --orange-color: #f59e0b;
+  --green-color: #22c55e;
+  --red-color: #f44336;
+  --grey-color: #888;
 }
 
 /* start box */

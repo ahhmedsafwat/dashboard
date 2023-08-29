@@ -1,10 +1,10 @@
 :root {
   --blue-color: #0075ff;
   --blue-alt-color: #0d69d5;
-  --blue-color: #f59e0b;
-  --blue-color: #22c55e;
-  --blue-color: #f44336;
-  --blue-color: #888;
+  --orange-color: #f59e0b;
+  --green-color: #22c55e;
+  --red-color: #f44336;
+  --grey-color: #888;
 }
 
 * {
@@ -111,11 +111,32 @@ ul {
   left: 15px;
   transform: translateY(-50%);
   font-size: 14px;
+  color: var(--grey-color);
 }
 
 .head .search input[type="search"] {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin-left: 5px;
+  padding-left: 30px;
+  width: 160px;
+  transition: width 0.3s;
 }
 
-.head .search input[type="sreach"]:focus::placeholder {
+.head .search input[type="search"]:focus {
+  width: 200px;
+}
+.head .search input[type="search"]:focus::placeholder {
+  opacity: 0;
+}
+.head .icons .notification::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: var(--red-color);
+  border-radius: 50%;
+  right: -5px;
+  top: -5px;
 }
 /* end content head */
