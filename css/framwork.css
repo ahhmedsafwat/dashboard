@@ -79,3 +79,7 @@
   justify-content: space-between;
 }
 /* end components */
+
+.cur-pointer {
+  cursor: pointer;
+}

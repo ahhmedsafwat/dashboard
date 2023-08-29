@@ -86,6 +86,7 @@ ul {
   .sidebar > h3 {
     font-size: 13px;
     margin-bottom: 15px;
+    margin-left: -3px;
   }
 
   .sidebar ul li a span {
@@ -129,6 +130,7 @@ ul {
 .head .search input[type="search"]:focus::placeholder {
   opacity: 0;
 }
+
 .head .icons .notification::before {
   content: "";
   position: absolute;
@@ -138,5 +140,10 @@ ul {
   border-radius: 50%;
   right: -5px;
   top: -5px;
+}
+.head .icons img {
+  width: 32px;
+  height: 32px;
+  margin-left: 15px;
 }
 /* end content head */
