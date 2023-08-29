@@ -28,6 +28,21 @@ ul {
   list-style: none;
   padding: 0;
 }
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background: white;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--blue-color);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--blue-alt-color);
+}
 .page {
   background-color: #f1f5f9;
   min-height: 100vh;
@@ -145,5 +160,26 @@ ul {
   width: 32px;
   height: 32px;
   margin-left: 15px;
+}
+.page h1 {
+  margin: 20px 20px 40px;
+}
+.page h1::before,
+.page h1::after {
+  content: "";
+  height: 3px;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  border-radius: 2px;
+}
+
+.page h1::before {
+  background-color: white;
+  width: 120px;
+}
+.page h1::after {
+  background-color: black;
+  width: 40px;
 }
 /* end content head */
