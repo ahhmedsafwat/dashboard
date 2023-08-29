@@ -88,3 +88,17 @@ ul {
 }
 
 /* end sidebar */
+
+/* start content head */
+.content {
+}
+.head .search::before {
+  content: "";
+}
+
+.head .search input[type="search"] {
+}
+
+.head .search input[type="sreach"]:focus::placeholder {
+}
+/* end content head */

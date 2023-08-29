@@ -8,9 +8,18 @@
 }
 /* end box */
 
+/* start width and hieght */
+.w-full {
+  width: 100%;
+}
+/* end width and hieght */
+
 /* start padding + margin */
 .p-10 {
   padding: 10px;
+}
+.p-15 {
+  padding: 15px;
 }
 .p-20 {
   padding: 20px;
@@ -54,8 +63,10 @@
 }
 /* end border */
 
-@media (max-width: 767px) {
-  .hide-mobile {
-    display: none;
-  }
+/* start components */
+.between-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
+/* end components */
