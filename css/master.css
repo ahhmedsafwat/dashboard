@@ -1,3 +1,12 @@
+:root {
+  --blue-color: #0075ff;
+  --blue-alt-color: #0d69d5;
+  --blue-color: #f59e0b;
+  --blue-color: #22c55e;
+  --blue-color: #f44336;
+  --blue-color: #888;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -91,9 +100,17 @@ ul {
 
 /* start content head */
 .content {
+  overflow: hidden;
 }
 .head .search::before {
-  content: "";
+  font-family: var(--fa-style-family-classic);
+  content: "\f002";
+  font-weight: 900;
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  font-size: 14px;
 }
 
 .head .search input[type="search"] {
