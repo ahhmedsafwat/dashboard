@@ -27,7 +27,11 @@
   .block-mobile {
     display: block;
   }
+  .hide-mobile {
+    display: none;
+  }
 }
+
 /* end box */
 
 /* start width and hieght */
