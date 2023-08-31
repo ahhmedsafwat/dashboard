@@ -29,6 +29,11 @@ ul {
   padding: 0;
 }
 
+p,
+h2 {
+  text-transform: capitalize;
+}
+
 ::-webkit-scrollbar {
   width: 15px;
 }
@@ -325,3 +330,15 @@ ul {
   background-color: rgb(33 196 93 / 20%);
 }
 /* end target  */
+/* start tickets */
+.tickets .box {
+  border: 1px solid #eee;
+  width: calc(50% - 10px);
+}
+
+@media (max-width: 767px) {
+  .tickets .box {
+    width: 100%;
+  }
+}
+/* end tickets */

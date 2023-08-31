@@ -17,6 +17,9 @@
 .d-grid {
   display: grid;
 }
+.f-wrap {
+  flex-wrap: wrap;
+}
 .align-center {
   align-items: center;
 }
@@ -105,6 +108,9 @@
 .bg-orange {
   background-color: var(--orange-color);
 }
+.bg-red {
+  background-color: var(--red-color);
+}
 .c-black {
   color: black;
 }
@@ -122,6 +128,9 @@
 }
 .c-orange {
   color: var(--orange-color);
+}
+.c-red {
+  color: var(--red-color);
 }
 /* end coloring */
 
