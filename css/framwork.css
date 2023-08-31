@@ -76,6 +76,9 @@
 .mt-20 {
   margin-top: 20px;
 }
+.mb-10 {
+  margin-bottom: 10px;
+}
 .mb-20 {
   margin-bottom: 20px;
 }
@@ -120,6 +123,9 @@
 .fs-14 {
   font-size: 14px;
 }
+.fs-15 {
+  font-size: 15px;
+}
 .capitalize {
   text-transform: capitalize;
 }
@@ -131,6 +137,10 @@
 }
 /* end font */
 /* start border */
+
+.b-none {
+  border: none;
+}
 .rad-6 {
   border-radius: 6px;
 }
@@ -144,6 +154,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.btn-shape {
+  border-radius: 6px;
+  padding: 4px 10px;
 }
 /* end components */
 

@@ -43,6 +43,10 @@ ul {
 ::-webkit-scrollbar-thumb:hover {
   background: var(--blue-alt-color);
 }
+
+::placeholder {
+  text-transform: capitalize;
+}
 .page {
   background-color: #f1f5f9;
   min-height: 100vh;
@@ -204,7 +208,7 @@ ul {
 }
 
 .welcome .intro img {
-  width: 170px;
+  width: 200px;
   margin-bottom: -10px;
 }
 .welcome .avatar {
@@ -233,5 +237,15 @@ ul {
 .welcome .visit:hover {
   background-color: var(--blue-alt-color);
 }
-
+@media (max-width: 767px) {
+  .welcome .intro {
+    margin-bottom: 30px;
+  }
+  .welcome .avatar {
+    margin-left: 0;
+  }
+  .welcome .body > div:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
 /* end welcome */

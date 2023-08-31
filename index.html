@@ -89,23 +89,38 @@
                 dashboard
             </h1>
             <div class="wrapper d-grid gap-20">
-                <div class="welcome capitalize bg-white rad-10 txt-c-mobile block-moblie ">
+                <!-- start welcome -->
+                <div class="welcome bg-white rad-10 txt-c-mobile block-mobile ">
                     <div class="intro p-20 d-flex space-between bg-eee">
                         <div>
                             <h2 class="m-0 capitalize">welcom</h2>
                             <p class="c-grey mt-5">Ahmed</p>
                         </div>
-                        <img src="images/welcome.png" alt="welcom photo">
+                        <img src="images/welcome.png" alt="welcom photo" class="hide-mobile">
                     </div>
-                    <img src="images/avatar.png" alt="avatar" class="avatar hide-in-mobile">
-                    <div class="body txt-c d-flex p-20 mt-20 mb-20 block-moblie">
+                    <img src="images/avatar.png" alt="avatar" class="avatar">
+                    <div class="body txt-c d-flex p-20 mt-20 mb-20 block-mobile">
                         <div>Ahmed Safwat <span class="capitalize  d-block c-grey fs-14 mt-10 "> Developer </span></div>
                         <div> 80 <span class="capitalize d-block c-grey  fs-14 mt-10"> projects </span></div>
                         <div> $8500 <span class="capitalize d-block c-grey fs-14 mt-10 "> earned </span></div>
                     </div>
                     <a href="profile.html"
-                        class="visit capitalize d-block fs-14 rad-6 bg-blue c-white w-fit">profile</a>
+                        class="visit capitalize d-block fs-14 bg-blue c-white w-fit btn-shape">profile</a>
                 </div>
+                <!-- end welcome -->
+                <!-- start quick draft widget -->
+                <div class="quick-draft p-20 bg-white rad-10">
+                    <h2 class="mt-0 mb-10">quick draft</h2>
+                    <p class="mt-0 mb-20 c-grey fs-14">write a draft for your ideas</p>
+                    <form action="">
+                        <input type="text" placeholder="title" class="d-block mb-20 w-full p-10 b-none bg-eee rad-6">
+                        <textarea class="d-block mb-20 w-full p-10 b-none bg-eee rad-6"
+                            placeholder="your thoughts"></textarea>
+                        <input type="submit" class="save d-block fs-14 bg-blue c-white b-none w-fit btn-shape"
+                            value="save">
+                    </form>
+                </div>
+                <!-- end quick draft widget -->
             </div>
         </div>
     </div>
