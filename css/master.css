@@ -2,7 +2,7 @@
   --blue-color: #0075ff;
   --blue-alt-color: #0d69d5;
   --orange-color: #f59e0b;
-  --green-color: #22c55e;
+  --green-color: #21c45d;
   --red-color: #f44336;
   --grey-color: #888;
 }
@@ -296,14 +296,32 @@ ul {
   border-color: transparent;
   border-width: 6px;
   border-style: solid;
-  border-top-color: var(--blue-color);
+
   position: absolute;
   bottom: -10px;
   left: 50%;
   transform: translateX(-50%);
 }
+
+.targets .details .progress > .blue span::after {
+  border-top-color: var(--blue-color);
+}
+.targets .details .progress > .orange span::after {
+  border-top-color: var(--orange-color);
+}
+.targets .details .progress > .green span::after {
+  border-top-color: var(--green-color);
+}
 .blue .icon,
 .blue .progress {
   background-color: rgb(0 117 255 / 20%);
+}
+.orange .icon,
+.orange .progress {
+  background-color: rgb(245 158 11 / 20%);
+}
+.green .icon,
+.green .progress {
+  background-color: rgb(33 196 93 / 20%);
 }
 /* end target  */

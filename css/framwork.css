@@ -99,6 +99,12 @@
 .bg-eee {
   background-color: #eee;
 }
+.bg-green {
+  background-color: var(--green-color);
+}
+.bg-orange {
+  background-color: var(--orange-color);
+}
 .c-black {
   color: black;
 }
@@ -110,6 +116,12 @@
 }
 .c-white {
   color: white;
+}
+.c-green {
+  color: var(--green-color);
+}
+.c-orange {
+  color: var(--orange-color);
 }
 /* end coloring */
 
