@@ -44,6 +44,9 @@
 .w-fit {
   width: fit-content;
 }
+
+.h-full {
+}
 /* end width and hieght */
 
 /* start padding + margin + gap*/
