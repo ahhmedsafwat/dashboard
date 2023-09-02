@@ -464,7 +464,16 @@ h3 {
 
 /* end reminders */
 /* start latest post */
-
+.latest-post .avatar {
+  width: 48px;
+  height: 48px;
+}
+.latest-post .post-content {
+  border-bottom: 1px solid #eee;
+  border-top: 1px solid #eee;
+  line-height: 1.8;
+  min-height: 140px;
+}
 /* end latest post */
 /* start animation */
 @keyframes change-color {
