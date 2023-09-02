@@ -407,3 +407,49 @@ h3 {
   height: 40px;
 }
 /* end latest uploads */
+/* start last project */
+.last-project ul::before {
+  content: "";
+  position: absolute;
+  left: 11px;
+  width: 2px;
+  height: 100%;
+  background: var(--blue-color);
+}
+.last-project ul li::before {
+  content: "";
+  /* width: 20px; */
+  min-width: 20px;
+  height: 20px;
+  display: block;
+  border-radius: 50%;
+  background: white;
+  border: 2px solid white;
+  outline: 2px solid var(--blue-color);
+  margin-right: 15px;
+  z-index: 1;
+}
+.last-project ul li.done::before {
+  background-color: var(--blue-alt-color);
+}
+.last-project ul li.current::before {
+  animation: change-color 0.8s infinite alternate;
+}
+.last-project .launch-icon {
+  position: absolute;
+  width: 160px;
+  right: 0;
+  bottom: 0;
+  opacity: 0.1;
+}
+/* end last project */
+/* start animation */
+@keyframes change-color {
+  from {
+    background-color: var(--blue-color);
+  }
+  to {
+    background-color: white;
+  }
+}
+/* end animation */
