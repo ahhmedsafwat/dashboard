@@ -564,6 +564,222 @@ h3 {
   margin-left: -20px;
 }
 /* end projects table*/
+/* start settings */
+.settings-page {
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+}
+@media (max-width: 767px) {
+  .settings-page {
+    grid-template-columns: minmax(100px, 1fr);
+    margin-left: 10px;
+    margin-right: 10px;
+    gap: 10px;
+  }
+}
+
+.settings-page .close-message {
+  border: 1px solid #ccc;
+  min-height: 150px;
+  resize: none;
+}
+
+.settings-page .sec-box {
+  padding-bottom: 15px;
+}
+.settings-page .sec-box:not(:last-of-type) {
+  border-bottom: 1px solid #eee;
+}
+.settings-page .sec-box .button {
+  transition: 0.3s;
+}
+.settings-page .sec-box .button:hover {
+  background-color: var(--blue-alt-color);
+}
+
+.settings-page .email {
+  display: inline-flex;
+  width: calc(100% - 90px);
+}
+
+.settings-page .socail-boxes i {
+  width: 40px;
+  height: 40px;
+  background-color: #f6f6f6;
+  border: 1px solid #ddd;
+  border-right: none;
+  border-radius: 6px 0 0 6px;
+  transition: 0.3s;
+}
+.settings-page .socail-boxes input {
+  height: 40px;
+  background-color: #f6f6f6;
+  border: 1px solid #ddd;
+
+  padding-left: 15px;
+  border-radius: 0 6px 6px 0;
+}
+.settings-page .socail-boxes > div:focus-within i {
+  color: black;
+}
+.widget-control .control input[type="checkbox"] {
+  appearance: none;
+  -ms-progress-appearance: none;
+}
+.widget-control .control label {
+  padding-left: 30px;
+  cursor: pointer;
+  position: relative;
+}
+
+.widget-control .control label::before,
+.widget-control .control label::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  border-radius: 4px;
+  top: 50%;
+  transition: 0.3s;
+}
+.widget-control .control label::before {
+  transform: translateY(-50%);
+  width: 14px;
+  height: 14px;
+  border: 2px solid var(--grey-color);
+}
+.widget-control .control label:hover:before {
+  border-color: var(--blue-alt-color);
+}
+.widget-control .control label::after {
+  font-family: var(--fa-style-family-classic);
+  content: "\f00c";
+  font-weight: 900;
+  transform: translateY(-50%) scale(0) rotate(360deg);
+  background-color: var(--blue-color);
+  color: white;
+  font-size: 12px;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.widget-control .control input[type="checkbox"]:checked + label::after {
+  transform: translateY(-50%) scale(1);
+}
+
+.backup-control input[type="radio"] {
+  appearance: none;
+  -moz-appearance: none;
+}
+.backup-control .date label {
+  position: relative;
+  cursor: pointer;
+  padding-left: 30px;
+}
+.backup-control .date label::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -11px;
+  width: 18px;
+  height: 18px;
+  border: 1.6px solid var(--grey-color);
+  border-radius: 50%;
+}
+
+.backup-control .date label::after {
+  content: "";
+  position: absolute;
+  left: 4.5px;
+  top: 4.5px;
+  background-color: var(--blue-color);
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: 0.3s;
+}
+
+.backup-control .date input[type="radio"]:checked + label::before {
+  border-color: var(--blue-color);
+}
+.backup-control .date input[type="radio"]:checked + label::after {
+  transform: scale(1);
+}
+
+.backup-control .servers {
+  border-top: 1px solid #eee;
+  padding-top: 20px;
+}
+
+@media (max-width: 767px) {
+  .backup-control .servers {
+    flex-wrap: wrap;
+  }
+}
+.backup-control .servers .server {
+  border: 2px solid #eee;
+  position: relative;
+}
+.backup-control .servers .server label {
+  cursor: pointer;
+}
+
+.backup-control .servers input[type="radio"]:checked + .server {
+  border-color: var(--blue-color);
+  transition: 0.3s;
+  color: var(--blue-color);
+}
+
+.toggle-checkbox {
+  appearance: none;
+  -moz-appearance: none;
+  display: none;
+}
+.toggle-switch {
+  background-color: #ccc;
+  width: 78px;
+  height: 32px;
+  border-radius: 16px;
+  position: relative;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.toggle-switch::before {
+  font-family: var(--fa-style-family-classic);
+  content: "";
+  font-weight: 900;
+  background-color: white;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  border-radius: 50%;
+  top: 4px;
+  left: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #aaa;
+  transition: 0.3s;
+}
+.toggle-checkbox:checked + .toggle-switch {
+  background-color: var(--blue-color);
+}
+.toggle-checkbox:checked + .toggle-switch::before {
+  content: "\f00c";
+  left: 50px;
+  color: var(--blue-color);
+}
+
+.settings-page :disabled {
+  cursor: no-drop;
+  background-color: #f0f4f8;
+  color: grey;
+}
+/* end settings */
+
 /* start animation */
 @keyframes change-color {
   from {

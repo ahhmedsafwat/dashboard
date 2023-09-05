@@ -81,6 +81,9 @@
 .m-0 {
   margin: 0;
 }
+.m-15 {
+  margin: 15px;
+}
 .m-20 {
   margin: 20px;
 }
@@ -109,11 +112,14 @@
 .mr-15 {
   margin-right: 15px;
 }
+.mb-5 {
+  margin-bottom: 5px;
+}
 .mb-10 {
   margin-bottom: 10px;
 }
-.mb-5 {
-  margin-bottom: 5px;
+.mb-15 {
+  margin-bottom: 15px;
 }
 .mb-20 {
   margin-bottom: 20px;
@@ -209,6 +215,9 @@
 
 .b-none {
   border: none;
+}
+.border-ccc {
+  border: 1px solid #ccc;
 }
 .rad-6 {
   border-radius: 6px;
