@@ -1057,7 +1057,87 @@ h3 {
   line-height: 1.8;
 }
 /* end projects page */
+/* start friends page */
+.friends-page {
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+@media (max-width: 767px) {
+  .friends-page {
+    grid-template-columns: minmax(200px, 1fr);
+    margin-left: 10px;
+    margin-right: 10px;
+    gap: 10px;
+  }
+}
+.friends-page .contact {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.friends-page .contact i {
+  background-color: #eee;
+  padding: 10px;
+  border-radius: 50%;
+  color: #666;
+  font-size: 13px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.friends-page .contact i:hover {
+  background-color: var(--blue-color);
+  color: white;
+}
 
+.friends-page .friend .icons {
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+@media (max-width: 767px) {
+  .friends-page .friend .icons {
+    text-align: center;
+  }
+}
+
+.friends-page .friend .icons i {
+  margin-right: 5px;
+}
+.friends-page .friend .vip {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  text-transform: uppercase;
+  font-size: 40px;
+  opacity: 0.2;
+}
+@media (max-width: 767px) {
+  .friends-page .friend .vip {
+    top: 0;
+    transform: translateY(0);
+    opacity: 1;
+    font-size: 15px;
+    background: #eee;
+    color: #666;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 15px;
+    margin-top: 10px;
+  }
+
+  .friends-page .friend .info {
+    flex-direction: column;
+  }
+  .friends-page .friend .info span {
+    margin-bottom: 15px;
+  }
+}
+/* end friends page */
 /* start animation */
 @keyframes change-color {
   from {
