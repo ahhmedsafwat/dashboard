@@ -186,6 +186,9 @@
 .p-relative {
   position: relative;
 }
+.p-absolute {
+  position: absolute;
+}
 /* end position */
 
 /* start font */
@@ -225,6 +228,9 @@
 .border-ccc {
   border: 1px solid #ccc;
 }
+.border-eee {
+  border: 1px solid #eee;
+}
 .rad-6 {
   border-radius: 6px;
 }
@@ -234,6 +240,7 @@
 .rad-half {
   border-radius: 50%;
 }
+
 /* end border */
 
 /* start components */
